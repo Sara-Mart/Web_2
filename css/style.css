@@ -268,3 +268,96 @@ header h1{
 
 
 }
+
+/*RESPONSIVE HORIZONTAL*/
+
+@media screen and (max-width: 768px) and (orientation: landscape)  {
+
+    nav{
+        justify-content: space-between;
+    }
+
+    .links{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .links li{
+
+        margin: 15px 0;
+
+    }
+
+    .links li:hover > ul{
+        display: block;
+        position:static;
+        z-index: 9999;
+        
+    }
+    .links > li{
+    float: center;
+    
+    
+}
+    
+
+    .hamburguer{
+        display: flex;
+    }
+    .links.show{
+
+        display:flex;
+        background-color: #b28263;
+        position: absolute;
+        z-index: 9999;
+
+    }
+
+
+  .links li ul li{
+        display: flex;
+        position:relative;
+        left: 50%;
+        right: 50%;
+        
+    }  
+
+    section{
+        display: block;
+    }
+    .links li a:hover{
+        background-color:unset;
+        color: #843E12;
+        border-radius: 0px;
+        transition: 0.5s;
+    }
+#selected{
+    background-color: unset;
+    padding: 10px;
+    border-radius: 0;
+}
+footer{
+    padding: 1rem;
+    font-size: 10px;
+    
+}
+
+/*etiquetas pagina inicio*/
+
+
+header h1{
+    display: none;
+}
+.img_home{
+    display:none;
+}
+
+
+
+}
+
