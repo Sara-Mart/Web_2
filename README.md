@@ -8,3 +8,6 @@ para poder exponer todos los productos de la marca, los botones de la web son fi
 una página "Contacta" con un formulario para ponerse en contacto por correo electrónico.
 
 Todas las imagenes son descargadas de la web: www.pexels.com
+
+
+GIT: https://sara-mart.github.io/Web_2/
