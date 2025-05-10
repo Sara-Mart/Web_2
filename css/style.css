@@ -179,7 +179,7 @@ footer p{
 }
 /*RESPONSIVE*/
 
-@media (max-width: 700px) {
+@media (max-width: 700px) and (orientation: landscape) {
 
     nav{
         justify-content: space-between;
