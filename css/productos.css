@@ -256,7 +256,16 @@ footer p{
 }
 
 .product-list{
+    position:absolute;
     display: block;
+    margin: 0 auto;
+    
+}
+.product-list .product{
+    
+    margin:0 auto;
+    
+
 }
 
 }
