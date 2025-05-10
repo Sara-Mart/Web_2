@@ -250,4 +250,15 @@ footer p{
     border-radius: 0;
 }
 
+@media(max-width:767px){
+
+h1{
+    display: none;
+}
+.img_home{
+    display: none;
+}
+
+}
+
 }
