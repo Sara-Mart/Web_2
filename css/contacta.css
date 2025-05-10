@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+     background-color: #b28263;
+}
+/****************MENU******************/
+
+header{
+
+    color:#ffd8af;
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+}
+nav img{
+    width: 80px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+.links{
+    list-style: none;
+    display: flex;
+}
+
+.links li{
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.links li a{
+    text-decoration:none;
+    color: #ffd8af;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+}
+
+
+.links li a:hover{
+    background-color:#843E12;
+    padding: 10px;
+    border-radius: 20px;
+}
+.links > li{
+    float: left;
+    
+    
+}
+.links li ul{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+   
+    
+}
+
+.links li:hover > ul{
+    display: block;
+    
+}
+ul li ul li{
+    text-decoration: none;
+}
+
+.hamburguer{
+    display:none;
+    cursor: pointer;
+}
+#selected{
+    background-color: #843E12;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/*FORMULARIO*/
+
+.input-contenedor{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #843E12;
+
+}
+form{
+    background-color:#ffffff;
+    margin-top: 100px;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    
+
+}
+
+form h1{
+    text-align: center;
+    font-size: 40px;
+    color:#843E12;
+    font-weight: 800;
+}
+legend{
+    font-weight: 600;
+    color: #b28263;
+}
+label{
+    display: block;
+}
+
+input [type="text"], input [type="email"]{
+
+    text-align: center;
+    font-size: 24px;
+    width: 80%;
+    padding: 10px;
+    border:none;
+    align-content: center;
+    
+
+}
+textarea{
+    width: 100%;
+}
+.boton input{
+    border: none;
+    width: 30%;
+    font-size: 24px;
+    color: #ffd8af;
+    background-color: #843E12;
+    padding: 15px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: auto;
+}
+
+.boton :hover{
+    color: #ffffff;
+    background-color: black;
+    transition: 1.5s;
+}
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #843E12;
+    text-align: center;
+    padding: 5px;
+    justify-content: space-between;
+    margin-top: 20px;
+    bottom: 0;
+    position: fixed;
+}
+
+footer p{
+    margin-left: 30px;
+    display: inline-block;
+    color: #ffd8af;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 700px) {
+
+    /*Menu*/
+    nav{
+        justify-content: space-between;
+    }
+
+    .links{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .links li{
+
+        margin: 15px 0;
+
+    }
+
+    .links li:hover > ul{
+        display: block;
+        position:static;
+        z-index: 9999;
+        
+    }
+    .links > li{
+    float: center;
+    
+    
+}
+    
+
+    .hamburguer{
+        display: flex;
+    }
+    .links.show{
+
+        display:flex;
+        background-color: #b28263;
+        position: absolute;
+        z-index: 9999;
+
+    }
+
+
+  .links li ul li{
+        display: flex;
+        position:relative;
+        left: 50%;
+        right: 50%;
+        
+    }  
+
+    section{
+        display: block;
+    }
+    .links li a:hover{
+        background-color:unset;
+        color: #843E12;
+        border-radius: 0px;
+        transition: 0.5s;
+    }
+#selected{
+    background-color: unset;
+    padding: 10px;
+    border-radius: 0;
+}
+    /*FORMULARIO*/
+    form{
+        margin-top: 150px;
+        width: 500px;
+        margin: auto;
+        border-radius: 2%;
+    }
+    .boton input{
+        width:20%;
+        font-size: 10px;
+    }
+
+}

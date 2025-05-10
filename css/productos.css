@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+     background-color: #b28263;
+     display: block;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+}
+/****************MENU******************/
+
+header{
+
+    color:#ffd8af;
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+}
+nav img{
+    width: 80px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+.links{
+    list-style: none;
+    display: flex;
+}
+
+.links li{
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.links li a{
+    text-decoration:none;
+    color: #ffd8af;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+}
+
+
+.links li a:hover{
+    background-color:#843E12;
+    padding: 10px;
+    border-radius: 20px;
+}
+.links > li{
+    float: left;
+    
+    
+}
+.links li ul{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+   
+    
+}
+
+.links li:hover > ul{
+    display: block;
+    
+}
+ul li ul li{
+    text-decoration: none;
+}
+
+.hamburguer{
+    display:none;
+    cursor: pointer;
+}
+#selected{
+    background-color: #843E12;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/*CONTENIDO*/
+
+h1{
+    color:#ffd8af;
+    z-index:9999;
+    position: relative;
+}
+.product-list{
+    display: flex;
+    width: 100%;
+    position:relative;
+    overflow: hidden;
+ justify-content: center;
+}
+
+.product-list .product{
+    color:#ffd8af;
+    width: 400px;
+    padding: 35px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+}
+.product-list .product img{
+
+    width: 200px;
+    height: 250px;
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+
+.product-list .product p{
+    font-size: 1.15rem;
+    color: #ffd8af;
+    font-weight: 600;
+    
+}
+
+/*BOTONES*/
+
+a{
+    text-decoration: none;
+}
+
+a button{
+    color: #ffd8af;
+    width: 150px;
+    background-color: #843E12;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    display: block;
+    margin:0 auto;
+    margin-top: 40px;
+    
+}
+a button:hover{
+    background-color: black;
+    color: #ffffff;
+    transition: 2s;
+}
+
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #843E12;
+    text-align: center;
+    padding: 5px;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+
+footer p{
+    margin-left: 30px;
+    display: inline-block;
+    color: #ffd8af;
+
+}
+/*RESPONSIVE*/
+
+@media (max-width: 700px) {
+
+    nav{
+        justify-content: space-between;
+    }
+
+    .links{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .links li{
+
+        margin: 15px 0;
+
+    }
+
+    .links li:hover > ul{
+        display: block;
+        position:static;
+        z-index: 9999;
+        
+    }
+    .links > li{
+    float: center;
+    
+    
+}
+    
+
+    .hamburguer{
+        display: flex;
+    }
+    .links.show{
+
+        display:flex;
+        background-color: #b28263;
+        position: absolute;
+        z-index: 9999;
+
+    }
+
+
+  .links li ul li{
+        display: flex;
+        position:relative;
+        left: 50%;
+        right: 50%;
+        
+    }  
+
+    section{
+        display: block;
+    }
+    .links li a:hover{
+        background-color:unset;
+        color: #843E12;
+        border-radius: 0px;
+        transition: 0.5s;
+    }
+#selected{
+    background-color: unset;
+    padding: 10px;
+    border-radius: 0;
+}
+
+.product-list{
+    display: block;
+}
+
+}

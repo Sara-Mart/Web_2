@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+     background-color: #b28263;
+}
+/****************MENU******************/
+
+header{
+
+    color:#ffd8af;
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+}
+nav img{
+    width: 80px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+
+.links{
+    list-style: none;
+    display: flex;
+}
+
+.links li{
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.links li a{
+    text-decoration:none;
+    color: #ffd8af;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+}
+
+
+.links li a:hover{
+    background-color:#843E12;
+    padding: 10px;
+    border-radius: 20px;
+}
+.links > li{
+    float: left;
+    
+    
+}
+.links li ul{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+   
+    
+}
+
+.links li:hover > ul{
+    display: block;
+    
+}
+ul li ul li{
+    text-decoration: none;
+}
+
+.hamburguer{
+    display:none;
+    cursor: pointer;
+}
+#selected{
+    background-color: #843E12;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/*CONTENEDOR PRINCIPAL*/
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido{
+    position: relative;
+    width: 100%;
+    display:block;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: center;
+}
+
+.contenido h1{
+    position: relative;
+    font-size: 4.5em;
+    text-align: center;
+    color: #ffd8af;
+    
+
+}
+
+.contenido h5{
+    font-size: 1.5em;
+    text-align: center;
+    color: #ffd8af;
+    
+}
+.contenido p{
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+
+}
+.contenido a{
+    text-decoration: none;
+}
+
+.contenido a button{
+    color: #ffd8af;
+    width: 150px;
+    background-color: #843E12;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    display: block;
+    margin:0 auto;
+    margin-top: 40px;
+    
+}
+.contenido a button:hover{
+    background-color: black;
+    color: #ffffff;
+    transition: 2s;
+}
+/*IMG PRINCIPAL*/
+.img_home{
+
+    width: 80vh;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -50px;
+
+}
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #843E12;
+    text-align: center;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+footer p{
+    margin-left: 30px;
+    display: inline-block;
+    color: #ffd8af;
+}
+/*RESPONSIVE*/
+
+@media (max-width: 700px) {
+
+    nav{
+        justify-content: space-between;
+    }
+
+    .links{
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .links li{
+
+        margin: 15px 0;
+
+    }
+
+    .links li:hover > ul{
+        display: block;
+        position:static;
+        z-index: 9999;
+        
+    }
+    .links > li{
+    float: center;
+    
+    
+}
+    
+
+    .hamburguer{
+        display: flex;
+    }
+    .links.show{
+
+        display:flex;
+        background-color: #b28263;
+        position: absolute;
+        z-index: 9999;
+
+    }
+
+
+  .links li ul li{
+        display: flex;
+        position:relative;
+        left: 50%;
+        right: 50%;
+        
+    }  
+
+    section{
+        display: block;
+    }
+    .links li a:hover{
+        background-color:unset;
+        color: #843E12;
+        border-radius: 0px;
+        transition: 0.5s;
+    }
+#selected{
+    background-color: unset;
+    padding: 10px;
+    border-radius: 0;
+}
+
+}
