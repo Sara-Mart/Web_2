@@ -257,6 +257,8 @@ footer p{
     display: none;
 }
 
+footer{
+    padding: 1rem;
 }
 
 }
