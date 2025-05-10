@@ -177,7 +177,7 @@ footer p{
     display: inline-block;
     color: #ffd8af;
 }
-/*RESPONSIVE*/
+/*RESPONSIVE VERTICAL*/
 
 @media screen and (max-width: 768px) and (orientation: portrait)  {
 
