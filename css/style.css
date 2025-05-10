@@ -250,7 +250,7 @@ footer p{
     border-radius: 0;
 }
 
-@media(max-width:767px){
+@media(max-width:500px){
 
 header h1{
     display: none;
