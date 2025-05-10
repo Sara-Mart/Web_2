@@ -252,7 +252,9 @@ footer p{
 
 @media(max-width:767px){
 
-
+header h1{
+    display: none;
+}
 .img_home{
     display: none;
 }
