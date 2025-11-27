@@ -1,11 +1,22 @@
-REALIZACIÓN DE UNA WEB RESPONSIVE
-Para esta actividad he querido realizar una web sobre productos de belleza.
-Para ello he creado un logo y buscado toda una serie de imágenes libres que pudiesen encajar con el diseño de la página.
-Para el menú de la página he añadido un script y no lo he hecho como en una de las clases, porque investigando encontré que era una forma de realizar el menú.
+🌐 Realización de una Web Responsive
 
-En cuanto al contenido, decidí añadir una página de "Inicio", de presentación de la marca. Una página "Sobre nosotros", para explicar un poco en qué consiste la marca. Una página de "Productos" 
-para poder exponer todos los productos de la marca, los botones de la web son ficticios, no van a ninguna parte, están puestos por decoración por si quiero ampliar el proyecto en otro momento. Por último,
-una página "Contacta" con un formulario para ponerse en contacto por correo electrónico.
+Para esta actividad he desarrollado una página web responsive centrada en productos de belleza. Para la identidad visual del proyecto, diseñé un logotipo y seleccioné imágenes libres de uso que encajaran con el estilo de la página. ✨
+
+🧭 Menú de navegación
+
+Para el menú principal añadí un script personalizado. No seguí exactamente el método visto en clase, ya que investigando encontré una alternativa que permitía implementar el menú de forma más eficiente. 💡
+
+📄 Contenido del sitio
+
+El sitio web está compuesto por las siguientes secciones:
+
+🏠 Inicio: Presentación general de la marca.
+
+👥 Sobre nosotros: Información sobre el concepto y filosofía de la marca.
+
+🛍️ Productos: Muestra de los productos disponibles. Los botones son decorativos y no redirigen a ninguna parte; están pensados para futuras ampliaciones del proyecto.
+
+📩 Contacta: Formulario para ponerse en contacto por correo electrónico.
 
 Todas las imagenes son descargadas de la web: www.pexels.com
 
